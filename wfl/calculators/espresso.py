@@ -43,7 +43,7 @@ class Espresso(WFLFileIOCalculator, ASE_Espresso):
 
     **kwargs: arguments for ase.calculators.espresso.Espresso
     """
-    implemented_properties = ["energy", "forces", "stress"]
+    implemented_properties = ["energy", "forces", "stress", "magmoms"]
 
     # new default value of num_inputs_per_python_subprocess for calculators.generic,
     # to override that function's built-in default of 10
