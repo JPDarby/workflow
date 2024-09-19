@@ -16,8 +16,8 @@ from .wfl_fileio_calculator import WFLFileIOCalculator
 from wfl.utils.save_calc_results import save_calc_results
 
 # NOMAD compatible, see https://nomad-lab.eu/prod/rae/gui/uploads
-_default_keep_files = ["*.pwo"]
-_default_properties = ["energy", "forces", "stress"]           # done as "implemented_propertie"
+_default_keep_files = ["*.pwo", "*.pwi"]
+_default_properties = ["energy", "forces", "stress", "magmoms"]           # done as "implemented_propertie"
 
 
 class Espresso(WFLFileIOCalculator, ASE_Espresso):
